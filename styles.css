@@ -30,9 +30,42 @@ form button {
 
 header {
     background-color: teal;
-    color: white;
+    color: black;
     text-align: center;
     padding: 1rem;
     margin-bottom: 1rem;
 }
+
+footer {
+    background-color: teal; 
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    border: black;
+    
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+    display: inline-block;
+    margin: 10px;
+}
+
+img {
+    margin-left: 100px;
+    width: 200px;
+    height: auto;
+    display: flex;
+}
+
+.link-list-contact {
+    display: flex;
+}
+
+
  
