@@ -100,23 +100,24 @@ main {
     header {
         position: fixed;
         top: 0;
+        left: 0;
         width: 100%;
-        background-color: teal;
         z-index: 1000;
     }
 
     .menu {
-        margin-top: 60px; 
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
         background-color: white;
         padding: 10px 0;
-        width: 100%;
-        position: fixed;
-        top: 40px;
-        z-index: 999;
+        text-align: center;
+        z-index: 1000;
     }
 
     .menu ul {
-        text-align: center;
+        display: inline-block;
         margin: 0;
         padding: 0;
     }
@@ -130,8 +131,8 @@ main {
         text-decoration: none;
     }
 
-    main {
-        margin-top: 100px;
+    .content-container {
+        margin-top: 60px; 
     }
 }
 
