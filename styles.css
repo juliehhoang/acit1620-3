@@ -102,12 +102,13 @@ main {
         top: 0;
         left: 0;
         width: 100%;
+        background-color: teal;
         padding: 10px 0;
         z-index: 1000;
+        text-align: center;
     }
 
     .menu ul {
-        text-align: center;
         margin: 0;
         padding: 0;
     }
@@ -115,6 +116,17 @@ main {
     .menu ul li {
         display: inline-block;
         margin-right: 10px;
+    }
+
+    .menu ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
