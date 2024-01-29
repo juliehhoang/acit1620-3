@@ -97,18 +97,26 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-    .menu {
+    header {
         position: fixed;
         top: 0;
-        left: 0;
         width: 100%;
         background-color: teal;
-        padding: 10px 0;
         z-index: 1000;
-        text-align: center;
+    }
+
+    .menu {
+        margin-top: 60px; 
+        background-color: white;
+        padding: 10px 0;
+        width: 100%;
+        position: fixed;
+        top: 40px;
+        z-index: 999;
     }
 
     .menu ul {
+        text-align: center;
         margin: 0;
         padding: 0;
     }
@@ -119,19 +127,11 @@ main {
     }
 
     .menu ul li a {
-        display: block;
         text-decoration: none;
-        padding: 5px;
-        background-color: white;
     }
 
-    .content-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header {
-        margin-top: 50px;
+    main {
+        margin-top: 100px;
     }
 }
 
