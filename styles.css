@@ -122,11 +122,16 @@ main {
         display: block;
         text-decoration: none;
         padding: 5px;
+        background-color: white;
     }
 
     .content-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    header {
+        margin-top: 50px;
     }
 }
 
