@@ -95,46 +95,56 @@ ul li a {
 main {
     flex: 3;
 }
+main p {
+    margin-top: 0px;
+}
 
 @media screen and (max-width: 600px) {
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-    }
-
     .menu {
-        position: fixed;
-        top: 100px;
-        left: 0;
+        display: flex;
+        flex-direction: row;
+        left: 0; /* Align the menu to the left side */
         width: 100%;
-        background-color: white;
-        padding: 10px 0;
-        text-align: center;
+        padding: 20px 0 10px; /* Added padding to top and bottom */
         z-index: 1000;
     }
 
     .menu ul {
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
         margin: 0;
         padding: 0;
     }
 
     .menu ul li {
-        display: inline-block;
-        margin-right: 10px;
+        margin: 0;
+        padding: 10px 20px; /* Added padding around each menu item */
+        border-right: 1px solid #ccc; /* Added border to separate menu items */
+    }
+
+    .menu ul li:last-child {
+        border-right: none; /* Remove border from last menu item */
     }
 
     .menu ul li a {
         text-decoration: none;
     }
 
-    .content-container {
-        margin-top: 60px; 
+    .img {
+        width: 200px;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 0px;
+        float: left;
+    }
+
+    .page-container {
+        margin-top: 80px;
+    }
+
+    main {
+        position:absolute ;
+        margin-top: 80px ;
+        margin-left: 0px; /* Adjust margin to wrap content around the image */
     }
 }
-
-
-
